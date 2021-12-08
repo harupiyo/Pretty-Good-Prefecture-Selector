@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>都道府県選択</title>
+    <style>
+ul {
+    list-style-type: none;
+}
+.pref-wrapper {
+    position: relative;
+}
+.prefecture-list {
+    position: absolute;
+    margin: 0;
+    top: 0.5em;
+    left: 1em;
+    background: #ffd;
+    padding-bottom: 3em;
+    border-radius: 3px;
+    width: 1000px;
+}
+    </style>
 </head>
 <body>
     <h1>都道府県選択</h1>
     <form>
-        <select id="prefectures">
-            <option value="" id="pref">--都道府県--</option>"
-        </select>
+        <div class="pref-wrapper">
+            <select id="prefectures">
+                <option value="" id="pref">--都道府県--</option>"
+            </select>
+            <ul class="prefecture-list">
+                <li>
+                    <section class="provinces hokkaido">
+                        <h2>北海道</h2>
+                        <ul>
+                            <li>北海道</li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </div>
     </form>
     <script src="main.js"></script>
 </body>
