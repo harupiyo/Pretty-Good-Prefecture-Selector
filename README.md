@@ -7,10 +7,21 @@ https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Template_literals
 https://www.javadrive.jp/javascript/event/index10.html
 https://www.javadrive.jp/javascript/event/index12.html
 https://monakaice88.hatenablog.com/entry/2017/02/23/082200
+- datalist 要素を使う
+    - http://jsfiddle.net/817gtvr6/1/
+    - http://www.shurey.com/js/labo/combobox.html
+- modal
+    - https://tech-dig.jp/js-modal/
+    - https://shogo-log.com/modal-javascript/
+    - https://www.codexworld.com/cookie-consent-popup-with-javascript/
+
+# Bugs
+
+- Google Chrome ではクリックを二回しないと都道府県のモーダルが出てこない
+- select をクリックした際、ブラウザーのプルダウンを表示しないようにする
 
 # TODO
 
-- select をクリックした際、ブラウザーのプルダウンを表示しないようにする
 - 北海道以外も選択できるようにする
 - 送信ボタンかEnter で選択されたものが送信されることをわかるようにalert() で表示するようにする
 - フェード効果を使ってスムーズな手触りにしたい
