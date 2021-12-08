@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefecture List</title>
+    <style>
+
+/*
+https://developer.mozilla.org/ja/docs/Glossary/Grid
+https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
+https://qiita.com/kura07/items/486c19045aab8090d6d9   
+ */
+
+ul {
+   list-style-type: none;
+}
+
+.prefectur-list {
+    display: grid;
+    grid-auto-flow: column;                 /* BOX が縦に並ぶようにする. 北が左上で南が右下という場所とエリアの関連付けを意識. */
+    grid-template-columns: 1fr 1fr;         /* 二行 */
+    grid-template-rows: 1fr 1fr 1fr 1fr;    /* 四列 */
+    background: #ffe;
+    padding-bottom: 3em;
+    border-radius: 3px;
+    width: 1000px;
+}
+
+.provinces ul {
+    display: flex;
+}
+
+.provinces ul li {
+    border-right: 1px solid gray;
+    padding: 0 1rem;
+}
+
+.provinces ul li:last-child {
+    border-right: none;
+}
+
+.hokkaido {
+}
+
+.tohoku {
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>都道府県一覧</h1>
+    <ul class="prefectur-list">
+        <li>
+            <section class="provinces hokkaido">
+                <h2>北海道</h2>
+                <ul>
+                    <li>北海道</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces touhoku">
+                <h2>東北地方</h2>
+                <ul>
+                    <li>青森</li>
+                    <li>岩手</li>
+                    <li>宮城</li>
+                    <li>秋田</li>
+                    <li>山形</li>
+                    <li>福島</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces">
+                <h2>関東地方</h2>
+                <ul>
+                    <li>茨城</li>
+                    <li>栃木</li>
+                    <li>群馬</li>
+                    <li>埼玉</li>
+                    <li>千葉</li>
+                    <li>東京</li>
+                    <li>神奈川</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces">
+                <h2>中部地方</h2>
+                <ul>
+                    <li>新潟</li>
+                    <li>富山</li>
+                    <li>石川</li>
+                    <li>福井</li>
+                    <li>山梨</li>
+                    <li>長野</li>
+                    <li>岐阜</li>
+                    <li>静岡</li>
+                    <li>愛知</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces">
+                <h2>近畿地方</h2>
+                <ul>
+                    <li>三重</li>
+                    <li>滋賀</li>
+                    <li>京都</li>
+                    <li>大阪</li>
+                    <li>兵庫</li>
+                    <li>奈良</li>
+                    <li>和歌山</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces">
+                <h2>中国地方</h2>
+                <ul>
+                    <li>鳥取</li>
+                    <li>島根</li>
+                    <li>岡山</li>
+                    <li>広島</li>
+                    <li>山口</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces">
+                <h2>四国地方</h2>
+                <ul>
+                    <li>徳島</li>
+                    <li>香川</li>
+                    <li>愛媛</li>
+                    <li>高知</li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section class="provinces">
+                <h2>九州地方</h2>
+                <ul>
+                    <li>福岡</li>
+                    <li>佐賀</li>
+                    <li>長崎</li>
+                    <li>熊本</li>
+                    <li>大分</li>
+                    <li>宮崎</li>
+                    <li>鹿児島</li>
+                    <li>沖縄</li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</body>
+</html>
