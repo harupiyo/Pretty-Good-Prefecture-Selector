@@ -1,5 +1,14 @@
 # Pretty-Good-Prefecture-Selector
 
+# Spec
+
+- Tab キーでフォーカスを移した際にもポップアップ
+
+# 動作確認
+
+- Ubuntu
+    - Google Chrome
+
 # Bugs
 
 - [firefox] select をクリックした際、ブラウザーのプルダウンを表示しないようにする
@@ -14,7 +23,7 @@
 
 https://developer.mozilla.org/ja/docs/Web/HTML/Element/select
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Template_literals
-https://www.javadrive.jp/javascript/event/index10.html
+https://www.javadrive.jp/javascript/event/index10.hl
 https://www.javadrive.jp/javascript/event/index12.html
 https://monakaice88.hatenablog.com/entry/2017/02/23/082200
 - datalist 要素を使う
