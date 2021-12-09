@@ -1,5 +1,15 @@
 # Pretty-Good-Prefecture-Selector
 
+# Bugs
+
+- [firefox] select をクリックした際、ブラウザーのプルダウンを表示しないようにする
+
+# TODO
+
+- 北海道以外も選択できるようにする
+- 送信ボタンかEnter で選択されたものが送信されることをわかるようにalert() で表示するようにする
+- フェード効果を使ってスムーズな手触りにしたい
+
 # Refs
 
 https://developer.mozilla.org/ja/docs/Web/HTML/Element/select
@@ -15,13 +25,9 @@ https://monakaice88.hatenablog.com/entry/2017/02/23/082200
     - https://shogo-log.com/modal-javascript/
     - https://www.codexworld.com/cookie-consent-popup-with-javascript/
 
-# Bugs
+## Similar
 
-- Google Chrome ではクリックを二回しないと都道府県のモーダルが出てこない
-- select をクリックした際、ブラウザーのプルダウンを表示しないようにする
-
-# TODO
-
-- 北海道以外も選択できるようにする
-- 送信ボタンかEnter で選択されたものが送信されることをわかるようにalert() で表示するようにする
-- フェード効果を使ってスムーズな手触りにしたい
+https://qiita.com/fakefurcoronet/items/8984bc078b2511f60cd7
+https://kinocolog.com/pref_select/
+https://mndangler.net/2014/08/japan-map_jquery_plugin/
+https://shu-naka-blog.com/website/address/

@@ -29,17 +29,21 @@ function selectit(string){
     // 選ばれた都道府県を選択結果として格納
     pref.value=string
     pref.innerText=string
+    // 選択可能にする
+    prefectures.disabled = false
 }
 
 // <select>--都道府県--</select> をクリックしたら
-//      ↓
-// <select>--都道府県--</select> を囲うdiv をクリックしたら...は<select> の方が手前なので失敗した
-const pref_wrapper = document.querySelector('.pref-wrapper')
-pref_wrapper.addEventListener('click', (event) => {
+prefectures.addEventListener('click', show_widget)
+// キーボード利用者向けに、Tab でフォーカスを移したとき
+// また、Google Chrome で、マウスをクリックしたら
+prefectures.addEventListener('focus', show_widget)
+
+function show_widget(event){
+    // 選択不可能にする
+    prefectures.disabled = true
     // ウィジェットを表示
     prefecture_list.style.display = "block"
     // modal であることを示すため、背景色を暗くする
     body.style.background = "gray"
-    // TODO ブラウザーのselect のプルダウンの表示を禁止したい
-    event.preventDefault()
-})
+}
