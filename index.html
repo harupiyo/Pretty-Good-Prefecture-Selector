@@ -21,6 +21,26 @@ ul {
     border-radius: 3px;
     width: 1000px;
 }
+
+/* select をクリックしたときの謎の灰色を追跡する */
+option:checked {
+    border: 10px solid red;
+    background-color: red !important;
+    color: blue !important;
+}
+select > option {
+    padding-inline: 0px;
+}
+option {
+    /*
+    display: none;
+    */
+    padding-block: 0px;
+    user-select: none;
+}
+option:focus{
+    display:none;
+}
     </style>
 </head>
 <body>
